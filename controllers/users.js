@@ -2,6 +2,7 @@ const mongodb = require('../data/database');
 const ObjectId = require('mongodb').ObjectId;
 
 const getAllUsers = async (req, res) => {
+    //#swagger.tags = ['Users']
     try {
         const result = await mongodb.getDataBase().db().collection('contacts').find().toArray();
         res.setHeader('Content-Type', 'application/json');
@@ -13,6 +14,7 @@ const getAllUsers = async (req, res) => {
 };
 
 const getUserById = async (req, res) => {
+    //#swagger.tags = ['Users']
     try {
         if (!ObjectId.isValid(req.params.id)) {
             return res.status(400).json({ error: 'Invalid user ID format' });
@@ -33,6 +35,7 @@ const getUserById = async (req, res) => {
 };
 
 const createUser = async (req, res) => {
+    //#swagger.tags = ['Users']
     try {
         const user = {
             firstName: req.body.firstName,
@@ -56,6 +59,7 @@ const createUser = async (req, res) => {
 };
 
 const deleteUser = async (req, res) => {
+    //#swagger.tags = ['Users']
     try {
         const userId = new ObjectId(req.params.id);
         const response = await mongodb.getDataBase().db().collection('contacts').deleteOne({ _id: userId });
@@ -72,6 +76,7 @@ const deleteUser = async (req, res) => {
 };
 
 const updateUser = async (req, res) => {
+    //#swagger.tags = ['Users']
     try {
         const userId = new ObjectId(req.params.id);
         const user = {
