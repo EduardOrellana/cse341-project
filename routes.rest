@@ -2,18 +2,18 @@
 GET http://localhost:3000/users
 
 # Obtener un usuario por ID
-GET http://localhost:3000/users/6783447a25b336004d7fbd27
+GET http://localhost:3000/users/678346cc25b336004d7fbd28
 
 # Crear un nuevo usuario
 POST http://localhost:3000/users HTTP/1.1
 Content-Type: application/json
 
 {
-    "firstName": "Jeimy",
+    "firstName": "Hyrum",
     "lastName": "Alvarado",
-    "email": "jeimy.alvarado13@gmail.com",
-    "favoriteColor": "red",
-    "birthDay": "2000/09/10"
+    "email": "hyrum.alvarado13@gmail.com",
+    "favoriteColor": "black",
+    "birthDay": "2000/10/10"
 }
 
 # Actualizar un usuario existente
@@ -22,10 +22,10 @@ Content-Type: application/json
 
 {
     "firstName": "Eduardo",
-    "lastName": "Orellana",
+    "lastName": "Umana",
     "email": "orellana@gmail.com",
     "favoriteColor": "orange",
     "birthDay": "2000/05/05"
 }
 
-DELETE http://localhost:3000/users/6783447a25b336004d7fbd27
+DELETE http://localhost:3000/users/678f18138425cbd6f3f52030

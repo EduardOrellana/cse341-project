@@ -5,8 +5,8 @@ const doc = {
         title: "API Contacts Erick Orellana",
         description: "API of Contacts",
     },
-    host: "localhost:3000",
-    schemes: ['http', 'https']
+    host: "cse341-project-ycuu.onrender.com",
+    schemes: ['https']
 };
 
 const outputFile = './swagger.json';
