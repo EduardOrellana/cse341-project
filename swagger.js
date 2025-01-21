@@ -5,7 +5,7 @@ const doc = {
         title: "API Contacts Erick Orellana",
         description: "API of Contacts",
     },
-    host: "cse341-project-ycuu.onrender.com",
+    host: "cse341-project-ycuu.onrender.com/users",
     schemes: ['https']
 };
 
